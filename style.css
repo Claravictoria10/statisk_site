@@ -58,7 +58,7 @@ a:hover {
   color: rgb(30, 23, 13);
 }
 
-.catagorylist {
+.categories {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
@@ -66,7 +66,7 @@ a:hover {
 }
 
 /* hver ting i grid'et bliver en boks */
-.catagorylist > * {
+.categories > * {
   border: 1px solid rgb(163, 182, 195);
   border-radius: 5px;
   padding: 30px;
@@ -170,7 +170,7 @@ button {
     padding: 20px;
   }
 
-  .catagorylist > * {
+  .categories > * {
     padding: 20px;
   }
 
