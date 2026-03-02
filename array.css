@@ -1,0 +1,35 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+li {
+  padding-left: 10px;
+  text-decoration: dotted;
+  gap: 10px;
+  text-align: center;
+  padding: 10px;
+  color: rgb(48, 34, 15);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  border: 0.5px solid black;
+  color: rgb(48, 34, 15);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 60px;
+}
+
+body {
+  background-color: rgb(247, 242, 225);
+}
