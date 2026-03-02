@@ -133,7 +133,7 @@ p:hover {
   margin-bottom: 0;
 }
 
-.grid_2_1 {
+#grid_2_1 {
   display: grid;
   grid-template-columns: 2fr 1fr;
   column-gap: 30px; /* kun mellem kolonner */
@@ -183,7 +183,7 @@ button {
     gap: 10px;
   }
 
-  .grid_2_1 {
+  #grid_2_1 {
     display: grid;
     grid-template-columns: 1fr;
   }
