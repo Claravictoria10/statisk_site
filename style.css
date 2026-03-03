@@ -11,18 +11,18 @@ img {
 }
 
 body {
-  max-width: 1450px;
+  max-width: 1500px;
   margin: 0 auto;
-  background-color: rgb(255, 251, 246);
+  background-color: rgb(252, 233, 216);
 }
 
 header {
-  background-color: rgb(215, 236, 250);
+  background-color: rgb(162, 139, 118);
   padding: 15px;
   text-align: center;
   font-family: "Barriecito", system-ui;
   font-style: normal;
-  color: rgb(30, 23, 13);
+  color: rgb(47, 34, 18);
 }
 
 main {
@@ -36,12 +36,12 @@ a {
   text-align: center;
   text-decoration: none;
   font-family: "Courier New", Courier, monospace;
-  color: rgb(30, 23, 13);
+  color: rgb(47, 34, 18);
   font-weight: 400;
 }
 
 h2 {
-  color: rgb(30, 23, 13);
+  color: rgb(47, 34, 18);
   font-family:
     "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
     Arial, sans-serif;
@@ -55,23 +55,25 @@ h2 {
 
 a:hover {
   font-weight: 800;
-  color: rgb(30, 23, 13);
+  color: rgb(47, 34, 18);
 }
 
 .categories {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  padding: 20px;
+  padding: 60px;
 }
 
 /* hver ting i grid'et bliver en boks */
 .categories > * {
-  border: 1px solid rgb(163, 182, 195);
-  border-radius: 5px;
-  padding: 30px;
-  background-color: rgb(215, 236, 250);
+  border: 1px solid rgb(125, 105, 87);
+  border-radius: 10px;
+  padding: 28px;
+  background-color: rgb(162, 139, 118);
   text-align: center;
+  color: rgb(47, 34, 18);
+  font-weight: 400px;
 }
 
 .grid {
@@ -106,7 +108,7 @@ p:hover {
 }
 
 .product {
-  color: rgb(158, 155, 155);
+  color: rgb(47, 34, 18);
 }
 
 .price {
@@ -157,21 +159,30 @@ button {
   margin: 25px auto 0; /* 25px ned, auto i siderne = centreret */
   padding: 15px 30px;
   border-radius: 5px;
-  border: 1px solid rgb(163, 182, 195);
-  background-color: rgb(215, 236, 250);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgb(125, 105, 87);
+  background-color: rgb(162, 139, 118);
+  color: rgb(47, 34, 18);
+}
+
+.product_pic {
+  width: 50%;
 }
 
 @media screen and (max-width: 1000px) {
-  .catagorylist {
+  .categories {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    padding: 20px;
+    gap: 20px;
+    padding: 10px;
+    justify-content: center;
   }
 
   .categories > * {
-    padding: 20px;
+    padding: 15px;
+  }
+
+  a {
+    font-size: 13px;
   }
 
   main {
