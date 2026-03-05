@@ -18,6 +18,12 @@ function showProduct(product) {
         <p>Type: ${product.articletype}</p>
         <p>Kategori: ${product.category}</p>
         <p>Pris: ${product.price},-</p>
+${product.soldout ? `<p class="soldout_text">SOLD OUT</p>` : ""}
+${
+  product.discount
+    ? `<p id="discount_1">Discount: <span>${product.discount}%</span></p>`
+    : ""
+}
       </div>
       <button>Køb nu</button>
     </div>

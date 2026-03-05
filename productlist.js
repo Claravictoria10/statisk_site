@@ -21,7 +21,7 @@ function showData(data) {
   data.forEach((element) => {
     markup += `
       <a href="productdetails.html?id=${element.id}">
-        <article class="productlist">
+        <article class="productlist" ${element.soldout && "soldout"}>
           <img
             src="https://kea-alt-del.dk/t7/images/webp/640/${element.id}.webp"
             alt="${element.productdisplayname}"
@@ -29,12 +29,10 @@ function showData(data) {
           <h3>${element.productdisplayname}</h3>
           <p class="product">${element.articletype || ""}</p>
           <p class="price">DKK <span>${element.price}</span>,-</p>
-
+          ${element.soldout ? `<p class="soldout_text">SOLD OUT</p>` : ""}
           ${
             element.discount
-              ? `<div class="discounted">
-                   <p>Discount: <span>${element.discount}%</span></p>
-                 </div>`
+              ? ` <p id="discount_1">Discount: <span>${element.discount}%</span></p>`
               : ""
           }
         </article>

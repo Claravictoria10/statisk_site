@@ -94,6 +94,10 @@ a:hover {
   font-size: 15px;
 }
 
+.productlist img {
+  border-radius: 7px;
+}
+
 h3 {
   font-family:
     "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
@@ -101,10 +105,6 @@ h3 {
   padding-bottom: 10px;
   padding-top: 5px;
   text-align: left;
-}
-
-p:hover {
-  font-weight: 400;
 }
 
 .product {
@@ -164,8 +164,32 @@ button {
   color: rgb(47, 34, 18);
 }
 
-.product_pic {
-  width: 50%;
+/* når article har attributten soldout, så gør billedet sløret */
+.productlist[soldout] img {
+  opacity: 0.4;
+}
+
+.soldout_text {
+  font-weight: bold;
+  margin: 0 0 6px;
+  color: rgb(253, 3, 3);
+}
+
+/* DISCOUNT */
+.discounted {
+  padding: 6px;
+  margin-top: 8px;
+  border-radius: 5px;
+}
+
+#discount_1 {
+  color: rgb(214, 214, 73);
+  background-color: black;
+  width: 150px;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 8px auto 0;
 }
 
 @media screen and (max-width: 1000px) {
