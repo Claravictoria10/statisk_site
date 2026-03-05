@@ -11,18 +11,19 @@ img {
 }
 
 body {
-  max-width: 1500px;
+  max-width: 1550px;
   margin: 0 auto;
-  background-color: rgb(252, 233, 216);
+  background-color: rgb(248, 239, 230);
 }
 
 header {
-  background-color: rgb(162, 139, 118);
+  background-color: rgb(186, 164, 143);
   padding: 15px;
-  text-align: center;
+  text-align: left;
   font-family: "Barriecito", system-ui;
   font-style: normal;
-  color: rgb(47, 34, 18);
+  font-size: 20px;
+  color: rgb(13, 9, 5);
 }
 
 main {
@@ -45,7 +46,7 @@ h2 {
   font-family:
     "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
     Arial, sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   padding: 20px;
 }
 
@@ -67,10 +68,10 @@ a:hover {
 
 /* hver ting i grid'et bliver en boks */
 .categories > * {
-  border: 1px solid rgb(125, 105, 87);
+  border: 1px solid rgb(169, 149, 130);
   border-radius: 10px;
   padding: 28px;
-  background-color: rgb(162, 139, 118);
+  background-color: rgb(186, 164, 143);
   text-align: center;
   color: rgb(47, 34, 18);
   font-weight: 400px;
@@ -144,7 +145,7 @@ h3 {
 
 #list {
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   font-family:
     "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
     Arial, sans-serif;
@@ -154,14 +155,18 @@ h3 {
   text-align: center;
 }
 
-button {
+#button_details {
   display: block;
   margin: 25px auto 0; /* 25px ned, auto i siderne = centreret */
   padding: 15px 30px;
   border-radius: 5px;
-  border: 1px solid rgb(125, 105, 87);
-  background-color: rgb(162, 139, 118);
+  border: 1px solid rgb(169, 149, 130);
+  background-color: rgb(186, 164, 143);
   color: rgb(47, 34, 18);
+}
+
+#button_details:hover {
+  background-color: rgb(151, 130, 110);
 }
 
 /* når article har attributten soldout, så gør billedet sløret */
@@ -188,10 +193,35 @@ button {
   width: 150px;
   padding: 5px;
   border-radius: 5px;
-  text-align: center;
-  margin: 8px auto 0;
 }
 
+#discount_2 {
+  color: rgb(214, 214, 73);
+  background-color: black;
+  width: 150px;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 8px auto 0;
+  font-size: 15px;
+}
+
+.productlist_button {
+  margin: 10px;
+  padding: 7px 30px;
+  border-radius: 5px;
+  border: 1px solid rgb(169, 149, 130);
+  background-color: rgb(186, 164, 143);
+  color: rgb(47, 34, 18);
+}
+
+.productlist_button:hover {
+  background-color: rgb(151, 130, 110);
+}
+
+#product_pic img {
+  max-width: 10px;
+}
 @media screen and (max-width: 1000px) {
   .categories {
     display: grid;

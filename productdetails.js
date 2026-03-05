@@ -7,10 +7,11 @@ fetch(endpoint)
   .then((res) => res.json())
   .then(showProduct);
 
+//Viser billedet og tekster samt knapper//
 function showProduct(product) {
   container.innerHTML = `
     <div>
-      <img src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp" class="product_pic" alt="${product.productdisplayname}" />
+      <img src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp" alt="${product.productdisplayname}" />
     </div>
     <div>
       <h2 id="productname">${product.productdisplayname}</h2>
@@ -21,11 +22,11 @@ function showProduct(product) {
 ${product.soldout ? `<p class="soldout_text">SOLD OUT</p>` : ""}
 ${
   product.discount
-    ? `<p id="discount_1">Discount: <span>${product.discount}%</span></p>`
+    ? `<p id="discount_2">Discount: <span>${product.discount}%</span></p>`
     : ""
 }
       </div>
-      <button>Køb nu</button>
+      <button id="button_details">Køb nu</button>
     </div>
   `;
 }
